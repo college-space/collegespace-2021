@@ -1,7 +1,7 @@
 import React from 'react';
 
 const ExamSpace = () => {
-  return <div>Exam Space</div>;
+  return <div>ExamSpace</div>;
 };
 
 export default ExamSpace;
