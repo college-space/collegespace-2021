@@ -2,7 +2,7 @@ const internshipExperiences = [
   {
     id: 0,
     date: '2019-01-07',
-    name: 'Anne Brians',
+    name: 'Emmy Acker',
     imageLink: '/img/yuna.jpg',
     company: 'Facebook',
     profile: 'Software Engineer',
