@@ -7,11 +7,11 @@ const Footer = () => {
         <Row>
           <Col m={4} s={12}>
             <a
-              href='mailto:collegespacensit@gmail.com'
+              href='mailto:nsut.collegespace@gmail.com'
               className='grey-text text-lighten-1'
             >
               <Icon>email</Icon>
-              <span>collegespacensit@gmail.com </span>
+              <span>nsut.collegespace@gmail.com </span>
             </a>
           </Col>
           <Col m={4} s={12}>
