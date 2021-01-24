@@ -38,11 +38,43 @@ const Sidenav = () => {
             Meet Our Team
           </NavLink>
         </li>
-        <li>
+        {/* <li>
           <NavLink to={'/examspace'} className='waves-effect'>
             <i className='material-icons'>videogame_asset</i>
             ExamSpace
           </NavLink>
+        </li> */}
+        <li className='no-padding'>
+          <Collapsible accordion={true} className='collapsible-accordion'>
+            <li className='bold'>
+              <a
+                className='collapsible-header waves-effect waves-teal'
+                // style={{ display: 'flex' }}
+              >
+                ExamSpace
+                <Icon>keyboard_arrow_down</Icon>
+              </a>
+              <div
+                className='collapsible-body'
+                // style={{ display: 'block' }}
+              >
+                <ul>
+                  <li>
+                    <NavLink to={'/examspace/midsem'} className='waves-effect'>
+                      <i className='material-icons'>toys</i>
+                      Mid Sem
+                    </NavLink>
+                  </li>
+                  <li>
+                    <NavLink to={'/examspace/endsem'} className='waves-effect'>
+                      <i className='material-icons'>toys</i>
+                      End Sem
+                    </NavLink>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </Collapsible>
         </li>
 
         <li className='no-padding'>
