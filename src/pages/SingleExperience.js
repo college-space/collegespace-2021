@@ -11,17 +11,26 @@ import {
 
 const SingleExperience = ({ match }) => {
   const [currExperience, setCurrExperience] = useState(null);
+  const [company, setCompany] = useState('Google');
 
   useEffect(() => {
     const { type, id } = match.params;
     console.log(type, id);
     if (type == 'internships') {
-      for (let i = 0; i < internshipExperiences.length; i++) {
-        if (internshipExperiences[i].id == id) {
-          setCurrExperience(internshipExperiences[i]);
-          break;
-        }
-      }
+      Object.keys(internshipExperiences).map((com) =>
+        internshipExperiences[com].map((member, index) => {
+          if (member.id === id) {
+            setCurrExperience(member);
+            setCompany(com);
+          }
+        })
+      );
+      // for (let i = 0; i < internshipExperiences.length; i++) {
+      //   if (internshipExperiences[i].id == id) {
+      //     setCurrExperience(internshipExperiences[i]);
+      //     break;
+      //   }
+      // }
     } else {
       // similarly search for placement experiences
     }
@@ -55,7 +64,7 @@ const SingleExperience = ({ match }) => {
           >
             <span>
               {currExperience.profile}
-              <br /> {currExperience.company}
+              <br /> {company}
             </span>
           </div>
         </Card>
