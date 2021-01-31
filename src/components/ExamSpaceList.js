@@ -1,11 +1,7 @@
-import React, { useState } from 'react';
+import React from 'react';
 import {
-  Row,
   Collapsible,
   CollapsibleItem,
-  Col,
-  Card,
-  CardTitle,
   Icon,
   Tabs,
   Tab,
