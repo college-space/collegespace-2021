@@ -8,8 +8,6 @@ import Internships from './pages/Internships';
 import Placements from './pages/Placements';
 import SingleExperience from './pages/SingleExperience';
 import Team from './pages/Team';
-import MidSem from './pages/MidSem';
-import EndSem from './pages/EndSem';
 import Sidenav from './components/Sidenav';
 
 function App() {
@@ -34,8 +32,8 @@ function App() {
               path='/learnspace/:type/:id(\d+)'
               component={SingleExperience}
             />
-            <Route exact path='/examspace/midsem' component={MidSem} />
-            <Route exact path='/examspace/endsem' component={EndSem} />
+            <Route exact path='/examspace/midsem' component={ExamSpace} />
+            <Route exact path='/examspace/endsem' component={ExamSpace} />
           </Switch>
         </main>
         <Footer />
