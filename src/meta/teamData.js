@@ -75,6 +75,12 @@ const teamData = {
       image: '/img/logo.png',
       chipImage: '/img/logo.png',
       bio: '',
+    },{
+      positions: ['Web Developer'],
+      name: 'Prince Bansal',
+      image: '/img/logo.png',
+      chipImage: '/img/logo.png',
+      bio: '',
     },
   ],
   'AppD Team': [
