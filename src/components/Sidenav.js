@@ -23,7 +23,7 @@ const Sidenav = () => {
     <>
       <ul ref={sidenavRef} id='slide-out' className='sidenav sidenav-fixed'>
         <li>
-          <img className='container' src={'img/logo.png'} />
+          <img className='container' src='img/logo.png' />
         </li>
 
         <li>
