@@ -6,7 +6,8 @@ const internshipExperiences = {
       profile: 'Software Engineer',
       caption: 'You Can Do It',
       date: '07/01/2019',
-      imageLink: '/img/yuna.jpg',
+      imageLink:
+        'https://res.cloudinary.com/neo1729/image/upload/v1613712053/CollegeSpace%20Feb%202021/yuna_ksq3ts.jpg',
       q_shortlisting:
         'In the written round the first we had an aptitude kind of a test. 40 students were shortlisted from this test. Then we had a coding round which consisted of 3 coding questions. The students having the highest percentages were among those 40 students were shortlisted for interviews. We had one technical interview in which pretty simple questions were asked. Then we had an HR which was also very easy.',
       q_interview:
@@ -23,7 +24,8 @@ const internshipExperiences = {
       profile: 'Data Analyst',
       caption: 'You Can Do It',
       date: '07/01/2019',
-      imageLink: '/img/yuna.jpg',
+      imageLink:
+        'https://res.cloudinary.com/neo1729/image/upload/v1613712053/CollegeSpace%20Feb%202021/yuna_ksq3ts.jpg',
       q_shortlisting: '',
       q_interview: '',
       q_resources: '',
@@ -38,7 +40,8 @@ const internshipExperiences = {
       profile: 'Software Engineer',
       caption: 'You Can Do It',
       date: '07/01/2019',
-      imageLink: '/img/yuna.jpg',
+      imageLink:
+        'https://res.cloudinary.com/neo1729/image/upload/v1613712053/CollegeSpace%20Feb%202021/yuna_ksq3ts.jpg',
       q_shortlisting: '',
       q_interview: '',
       q_resources: '',
@@ -51,7 +54,8 @@ const internshipExperiences = {
       profile: 'Data Analyst',
       caption: 'You Can Do It',
       date: '07/01/2019',
-      imageLink: '/img/yuna.jpg',
+      imageLink:
+        'https://res.cloudinary.com/neo1729/image/upload/v1613712053/CollegeSpace%20Feb%202021/yuna_ksq3ts.jpg',
       q_shortlisting: '',
       q_interview: '',
       q_resources: '',
@@ -64,7 +68,8 @@ const internshipExperiences = {
       profile: 'Software Engineer',
       caption: 'You Can Do It',
       date: '07/01/2019',
-      imageLink: '/img/yuna.jpg',
+      imageLink:
+        'https://res.cloudinary.com/neo1729/image/upload/v1613712053/CollegeSpace%20Feb%202021/yuna_ksq3ts.jpg',
       q_shortlisting: '',
       q_interview: '',
       q_resources: '',
@@ -79,7 +84,8 @@ const internshipExperiences = {
       profile: 'Data Analyst',
       caption: 'You Can Do It',
       date: '07/01/2019',
-      imageLink: '/img/yuna.jpg',
+      imageLink:
+        'https://res.cloudinary.com/neo1729/image/upload/v1613712053/CollegeSpace%20Feb%202021/yuna_ksq3ts.jpg',
       q_shortlisting: '',
       q_interview: '',
       q_resources: '',
@@ -92,7 +98,8 @@ const internshipExperiences = {
       profile: 'Software Engineer',
       caption: 'You Can Do It',
       date: '07/01/2019',
-      imageLink: '/img/yuna.jpg',
+      imageLink:
+        'https://res.cloudinary.com/neo1729/image/upload/v1613712053/CollegeSpace%20Feb%202021/yuna_ksq3ts.jpg',
       q_shortlisting: '',
       q_interview: '',
       q_resources: '',
@@ -108,7 +115,8 @@ const internshipExperiences = {
       profile: 'Data Analyst',
       caption: 'You Can Do It',
       date: '07/01/2019',
-      imageLink: '/img/yuna.jpg',
+      imageLink:
+        'https://res.cloudinary.com/neo1729/image/upload/v1613712053/CollegeSpace%20Feb%202021/yuna_ksq3ts.jpg',
       q_shortlisting: '',
       q_interview: '',
       q_resources: '',

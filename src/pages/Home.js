@@ -1,5 +1,6 @@
 import React from 'react';
 import { Row, Col } from 'react-materialize';
+import { getImageURL } from '../utils/getImageURL';
 
 const Home = () => {
   return (
@@ -15,7 +16,15 @@ const Home = () => {
         <Col m={3} s={12}>
           <div className='card large'>
             <div className='card-image'>
-              <img src='img/logo1.png' />
+              <img
+                src={getImageURL(
+                  'https://res.cloudinary.com/neo1729/image/upload/v1613712053/CollegeSpace%20Feb%202021/logo1_jon7yh.png',
+                  300,
+                  -1,
+                  -1,
+                  -1
+                )}
+              />
             </div>
             <span className='card-title'>Who are we?</span>
             <div className='card-content'>
@@ -32,7 +41,15 @@ const Home = () => {
         <Col m={3} s={12}>
           <div className='card large'>
             <div className='card-image'>
-              <img src='img/logo2.png' />
+              <img
+                src={getImageURL(
+                  'https://res.cloudinary.com/neo1729/image/upload/v1613712053/CollegeSpace%20Feb%202021/logo2_ii79c5.png',
+                  300,
+                  -1,
+                  -1,
+                  -1
+                )}
+              />
             </div>
             <span className='card-title'>What have we been upto?</span>
             <div className='card-content'>
@@ -48,7 +65,15 @@ const Home = () => {
         <Col m={3} s={12}>
           <div className='card large'>
             <div className='card-image'>
-              <img src='img/logo3.png' />
+              <img
+                src={getImageURL(
+                  'https://res.cloudinary.com/neo1729/image/upload/v1613712053/CollegeSpace%20Feb%202021/logo3_mkdfjf.png',
+                  300,
+                  -1,
+                  -1,
+                  -1
+                )}
+              />
             </div>
             <span className='card-title'>Whom will you meet at CS?</span>
             <div className='card-content'>
@@ -64,7 +89,15 @@ const Home = () => {
         <Col m={3} s={12}>
           <div className='card large'>
             <div className='card-image'>
-              <img src='img/logo4.png' />
+              <img
+                src={getImageURL(
+                  'https://res.cloudinary.com/neo1729/image/upload/v1613712053/CollegeSpace%20Feb%202021/logo4_desbp8.png',
+                  300,
+                  -1,
+                  -1,
+                  -1
+                )}
+              />
             </div>
             <span className='card-title'>Why should you join CS?</span>
             <div className='card-content'>
@@ -81,11 +114,11 @@ const Home = () => {
         <ul>
           <li>
             <b>ExamSpace</b> - A place to find the previous year papers that
-            serves the nwe NSUT curriculum too
+            serves the new NSUT curriculum too
             <br />
           </li>
           <li>
-            <b>LearnSpace</b> - A place to view the internsip and placement
+            <b>LearnSpace</b> - A place to view the internship and placement
             experiences
             <br />
           </li>
