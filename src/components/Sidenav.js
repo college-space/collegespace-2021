@@ -3,6 +3,7 @@ import M from 'materialize-css';
 import 'materialize-css/dist/css/materialize.min.css';
 import { Icon, Collapsible } from 'react-materialize';
 import { NavLink } from 'react-router-dom';
+import { getImageURL } from '../utils/getImageURL';
 
 const Sidenav = () => {
   const sidenavRef = useRef(null);
@@ -23,7 +24,16 @@ const Sidenav = () => {
     <>
       <ul ref={sidenavRef} id='slide-out' className='sidenav sidenav-fixed'>
         <li>
-          <img className='container' src='img/logo.png' />
+          <img
+            className='container'
+            src={getImageURL(
+              'https://res.cloudinary.com/neo1729/image/upload/v1613712054/CollegeSpace%20Feb%202021/logo_xeqw2n.png',
+              300,
+              -1,
+              -1,
+              -1
+            )}
+          />
         </li>
 
         <li>

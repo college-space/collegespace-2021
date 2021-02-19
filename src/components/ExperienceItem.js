@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Col, Card, CardTitle } from 'react-materialize';
+import { getImageURL } from '../utils/getImageURL';
 
 const ExperienceItem = ({ member, id, type }) => {
   return (
@@ -17,7 +18,10 @@ const ExperienceItem = ({ member, id, type }) => {
           className='hoverable'
           horizontal
           header={
-            <CardTitle image={member.imageLink} className='valign-wrapper' />
+            <CardTitle
+              image={getImageURL(member.imageLink, -1, -1, -1, -1)}
+              className='valign-wrapper'
+            />
           }
         >
           <p>{member.name}</p>

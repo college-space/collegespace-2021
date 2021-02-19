@@ -9,6 +9,8 @@ import {
   Icon,
 } from 'react-materialize';
 import { Link } from 'react-router-dom';
+import { getImageURL } from '../utils/getImageURL';
+
 const Experiences = ({ experiences, type }) => {
   // This component renders all the experiences
   //   console.log(experiences);
@@ -33,7 +35,7 @@ const Experiences = ({ experiences, type }) => {
                     horizontal
                     header={
                       <CardTitle
-                        image={member.imageLink}
+                        image={getImageURL(member.imageLink, -1, -1, -1, -1)}
                         className='valign-wrapper'
                       />
                     }

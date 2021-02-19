@@ -1,6 +1,7 @@
 import React from 'react';
 import teamData from '../meta/teamData';
 import { Tabs, Tab, Row, Col, Chip, Card, CardTitle } from 'react-materialize';
+import { getImageURL } from '../utils/getImageURL';
 
 const Team = () => {
   return (
@@ -26,10 +27,27 @@ const Team = () => {
                       <span>
                         <center>
                           <Chip style={{ marginTop: '15px' }}>
-                            <img src={member.chipImage} alt={member.name} />
+                            <img
+                              src={getImageURL(
+                                member.chipImage,
+                                100,
+                                -1,
+                                -1,
+                                -1
+                              )}
+                              alt={member.name}
+                            />
                             {member.name}
                           </Chip>
-                          <CardTitle image={member.image} />
+                          <CardTitle
+                            image={getImageURL(
+                              member.chipImage,
+                              300,
+                              -1,
+                              -1,
+                              -1
+                            )}
+                          />
                         </center>
                       </span>
                     }

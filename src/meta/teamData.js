@@ -3,50 +3,73 @@ const teamData = {
     {
       positions: ['President'],
       name: 'Shrey Jain',
-      image: '/img/logo.png',
-      chipImage: '/img/logo.png',
+      image:
+        'https://res.cloudinary.com/neo1729/image/upload/v1613712054/CollegeSpace%20Feb%202021/logo_xeqw2n.png',
+      chipImage:
+        'https://res.cloudinary.com/neo1729/image/upload/v1613712054/CollegeSpace%20Feb%202021/logo_xeqw2n.png',
       bio: '',
-    },{
+    },
+    {
       positions: ['Director'],
       name: 'Divya Rawat',
-      image: '/img/logo.png',
-      chipImage: '/img/logo.png',
+      image:
+        'https://res.cloudinary.com/neo1729/image/upload/v1613712054/CollegeSpace%20Feb%202021/logo_xeqw2n.png',
+      chipImage:
+        'https://res.cloudinary.com/neo1729/image/upload/v1613712054/CollegeSpace%20Feb%202021/logo_xeqw2n.png',
       bio: '',
-    },{
+    },
+    {
       positions: ['Director', 'AppD Lead'],
       name: 'Mohit Yadav',
-      image: '/img/logo.png',
-      chipImage: '/img/logo.png',
+      image:
+        'https://res.cloudinary.com/neo1729/image/upload/v1613712054/CollegeSpace%20Feb%202021/logo_xeqw2n.png',
+      chipImage:
+        'https://res.cloudinary.com/neo1729/image/upload/v1613712054/CollegeSpace%20Feb%202021/logo_xeqw2n.png',
       bio: '',
-    },{
+    },
+    {
       positions: ['Tech Lead'],
       name: 'Anish Jangra',
-      image: '/img/logo.png',
-      chipImage: '/img/logo.png',
+      image:
+        'https://res.cloudinary.com/neo1729/image/upload/v1613712054/CollegeSpace%20Feb%202021/logo_xeqw2n.png',
+      chipImage:
+        'https://res.cloudinary.com/neo1729/image/upload/v1613712054/CollegeSpace%20Feb%202021/logo_xeqw2n.png',
       bio: '',
-    },{
+    },
+    {
       positions: ['Tech Lead'],
       name: 'Shubham',
-      image: '/img/logo.png',
-      chipImage: '/img/logo.png',
+      image:
+        'https://res.cloudinary.com/neo1729/image/upload/v1613712054/CollegeSpace%20Feb%202021/logo_xeqw2n.png',
+      chipImage:
+        'https://res.cloudinary.com/neo1729/image/upload/v1613712054/CollegeSpace%20Feb%202021/logo_xeqw2n.png',
       bio: '',
-    },{
+    },
+    {
       positions: ['Content Management Lead'],
       name: 'Jigyasu Malhotra',
-      image: '/img/logo.png',
-      chipImage: '/img/logo.png',
+      image:
+        'https://res.cloudinary.com/neo1729/image/upload/v1613712054/CollegeSpace%20Feb%202021/logo_xeqw2n.png',
+      chipImage:
+        'https://res.cloudinary.com/neo1729/image/upload/v1613712054/CollegeSpace%20Feb%202021/logo_xeqw2n.png',
       bio: '',
-    },{
+    },
+    {
       positions: ['Content Creation, Marketing & PR Lead'],
       name: 'Avanik Gupta',
-      image: '/img/logo.png',
-      chipImage: '/img/logo.png',
+      image:
+        'https://res.cloudinary.com/neo1729/image/upload/v1613712054/CollegeSpace%20Feb%202021/logo_xeqw2n.png',
+      chipImage:
+        'https://res.cloudinary.com/neo1729/image/upload/v1613712054/CollegeSpace%20Feb%202021/logo_xeqw2n.png',
       bio: '',
-    },{
+    },
+    {
       positions: ['Founder'],
       name: 'Sahil Gulati',
-      image: '/img/logo.png',
-      chipImage: '/img/logo.png',
+      image:
+        'https://res.cloudinary.com/neo1729/image/upload/v1613712054/CollegeSpace%20Feb%202021/logo_xeqw2n.png',
+      chipImage:
+        'https://res.cloudinary.com/neo1729/image/upload/v1613712054/CollegeSpace%20Feb%202021/logo_xeqw2n.png',
       bio: '',
     },
   ],
@@ -54,32 +77,46 @@ const teamData = {
     {
       positions: ['WebD Lead'],
       name: 'Anish Jangra',
-      image: '/img/logo.png',
-      chipImage: '/img/logo.png',
+      image:
+        'https://res.cloudinary.com/neo1729/image/upload/v1613712054/CollegeSpace%20Feb%202021/logo_xeqw2n.png',
+      chipImage:
+        'https://res.cloudinary.com/neo1729/image/upload/v1613712054/CollegeSpace%20Feb%202021/logo_xeqw2n.png',
       bio: '',
-    },{
+    },
+    {
       positions: ['WebD Lead'],
       name: 'Shubham',
-      image: '/img/logo.png',
-      chipImage: '/img/logo.png',
+      image:
+        'https://res.cloudinary.com/neo1729/image/upload/v1613712054/CollegeSpace%20Feb%202021/logo_xeqw2n.png',
+      chipImage:
+        'https://res.cloudinary.com/neo1729/image/upload/v1613712054/CollegeSpace%20Feb%202021/logo_xeqw2n.png',
       bio: '',
-    },{
+    },
+    {
       positions: ['Web Developer'],
       name: 'Shakib Ahmed',
-      image: '/img/logo.png',
-      chipImage: '/img/logo.png',
+      image:
+        'https://res.cloudinary.com/neo1729/image/upload/v1613712054/CollegeSpace%20Feb%202021/logo_xeqw2n.png',
+      chipImage:
+        'https://res.cloudinary.com/neo1729/image/upload/v1613712054/CollegeSpace%20Feb%202021/logo_xeqw2n.png',
       bio: '',
-    },{
+    },
+    {
       positions: ['Web Developer'],
       name: 'Prakash Ujjawal',
-      image: '/img/logo.png',
-      chipImage: '/img/logo.png',
+      image:
+        'https://res.cloudinary.com/neo1729/image/upload/v1613712054/CollegeSpace%20Feb%202021/logo_xeqw2n.png',
+      chipImage:
+        'https://res.cloudinary.com/neo1729/image/upload/v1613712054/CollegeSpace%20Feb%202021/logo_xeqw2n.png',
       bio: '',
-    },{
+    },
+    {
       positions: ['Web Developer'],
       name: 'Prince Bansal',
-      image: '/img/logo.png',
-      chipImage: '/img/logo.png',
+      image:
+        'https://res.cloudinary.com/neo1729/image/upload/v1613712054/CollegeSpace%20Feb%202021/logo_xeqw2n.png',
+      chipImage:
+        'https://res.cloudinary.com/neo1729/image/upload/v1613712054/CollegeSpace%20Feb%202021/logo_xeqw2n.png',
       bio: '',
     },
   ],
@@ -87,14 +124,19 @@ const teamData = {
     {
       positions: ['Director', 'AppD Lead'],
       name: 'Mohit Yadav',
-      image: '/img/logo.png',
-      chipImage: '/img/logo.png',
+      image:
+        'https://res.cloudinary.com/neo1729/image/upload/v1613712054/CollegeSpace%20Feb%202021/logo_xeqw2n.png',
+      chipImage:
+        'https://res.cloudinary.com/neo1729/image/upload/v1613712054/CollegeSpace%20Feb%202021/logo_xeqw2n.png',
       bio: '',
-    },{
+    },
+    {
       positions: ['App Developer', 'Content Creator'],
       name: 'Urja Banati',
-      image: '/img/logo.png',
-      chipImage: '/img/logo.png',
+      image:
+        'https://res.cloudinary.com/neo1729/image/upload/v1613712054/CollegeSpace%20Feb%202021/logo_xeqw2n.png',
+      chipImage:
+        'https://res.cloudinary.com/neo1729/image/upload/v1613712054/CollegeSpace%20Feb%202021/logo_xeqw2n.png',
       bio: '',
     },
   ],
@@ -102,20 +144,28 @@ const teamData = {
     {
       positions: ['Content Management Lead'],
       name: 'Jigyasu Malhotra',
-      image: '/img/logo.png',
-      chipImage: '/img/logo.png',
+      image:
+        'https://res.cloudinary.com/neo1729/image/upload/v1613712054/CollegeSpace%20Feb%202021/logo_xeqw2n.png',
+      chipImage:
+        'https://res.cloudinary.com/neo1729/image/upload/v1613712054/CollegeSpace%20Feb%202021/logo_xeqw2n.png',
       bio: '',
-    },{
+    },
+    {
       positions: ['Content Manager'],
       name: 'Devesh Garg',
-      image: '/img/logo.png',
-      chipImage: '/img/logo.png',
+      image:
+        'https://res.cloudinary.com/neo1729/image/upload/v1613712054/CollegeSpace%20Feb%202021/logo_xeqw2n.png',
+      chipImage:
+        'https://res.cloudinary.com/neo1729/image/upload/v1613712054/CollegeSpace%20Feb%202021/logo_xeqw2n.png',
       bio: '',
-    },{
+    },
+    {
       positions: ['Content Manager'],
       name: 'Harshita Yadav',
-      image: '/img/logo.png',
-      chipImage: '/img/logo.png',
+      image:
+        'https://res.cloudinary.com/neo1729/image/upload/v1613712054/CollegeSpace%20Feb%202021/logo_xeqw2n.png',
+      chipImage:
+        'https://res.cloudinary.com/neo1729/image/upload/v1613712054/CollegeSpace%20Feb%202021/logo_xeqw2n.png',
       bio: '',
     },
   ],
@@ -123,29 +173,39 @@ const teamData = {
     {
       positions: ['Director', 'Content Creation Lead'],
       name: 'Divya Rawat',
-      image: '/img/logo.png',
-      chipImage: '/img/logo.png',
+      image:
+        'https://res.cloudinary.com/neo1729/image/upload/v1613712054/CollegeSpace%20Feb%202021/logo_xeqw2n.png',
+      chipImage:
+        'https://res.cloudinary.com/neo1729/image/upload/v1613712054/CollegeSpace%20Feb%202021/logo_xeqw2n.png',
       bio: '',
-    },{
+    },
+    {
       positions: ['Content Creation, Marketing & PR Lead'],
       name: 'Avanik Gupta',
-      image: '/img/logo.png',
-      chipImage: '/img/logo.png',
+      image:
+        'https://res.cloudinary.com/neo1729/image/upload/v1613712054/CollegeSpace%20Feb%202021/logo_xeqw2n.png',
+      chipImage:
+        'https://res.cloudinary.com/neo1729/image/upload/v1613712054/CollegeSpace%20Feb%202021/logo_xeqw2n.png',
       bio: '',
-    },{
+    },
+    {
       positions: ['Content Creator', 'App Developer'],
       name: 'Urja Banati',
-      image: '/img/logo.png',
-      chipImage: '/img/logo.png',
+      image:
+        'https://res.cloudinary.com/neo1729/image/upload/v1613712054/CollegeSpace%20Feb%202021/logo_xeqw2n.png',
+      chipImage:
+        'https://res.cloudinary.com/neo1729/image/upload/v1613712054/CollegeSpace%20Feb%202021/logo_xeqw2n.png',
       bio: '',
-    }
+    },
   ],
   Designers: [
     {
       positions: ['President'],
       name: 'Shrey Jain',
-      image: '/img/logo.png',
-      chipImage: '/img/logo.png',
+      image:
+        'https://res.cloudinary.com/neo1729/image/upload/v1613712054/CollegeSpace%20Feb%202021/logo_xeqw2n.png',
+      chipImage:
+        'https://res.cloudinary.com/neo1729/image/upload/v1613712054/CollegeSpace%20Feb%202021/logo_xeqw2n.png',
       bio: '',
     },
   ],
@@ -153,8 +213,10 @@ const teamData = {
     {
       positions: ['Founder'],
       name: 'Sahil Gulati',
-      image: '/img/logo.png',
-      chipImage: '/img/logo.png',
+      image:
+        'https://res.cloudinary.com/neo1729/image/upload/v1613712054/CollegeSpace%20Feb%202021/logo_xeqw2n.png',
+      chipImage:
+        'https://res.cloudinary.com/neo1729/image/upload/v1613712054/CollegeSpace%20Feb%202021/logo_xeqw2n.png',
       bio: '',
     },
   ],
