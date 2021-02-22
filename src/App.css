@@ -302,3 +302,27 @@ footer {
     opacity: 0;
   }
 }
+
+/* .tabs .tab a a.active {
+  color: black;
+}
+
+a.active {
+  color: black;
+} */
+
+.tabs .tab a {
+  color: #38435a;
+}
+
+.tabs .tab a:hover,
+.tabs .tab a.active {
+  background-color: transparent;
+  color: #38435a;
+}
+
+.tabs .tab a:focus,
+.tabs .tab a:focus.active {
+  background-color: rgba(56, 67, 90, 0.1);
+  outline: none;
+}
