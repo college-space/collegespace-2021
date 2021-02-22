@@ -1,70 +1,34 @@
-import React from 'react';
-import {
-  Row,
-  Collapsible,
-  CollapsibleItem,
-  Col,
-  Card,
-  CardTitle,
-  Icon,
-} from 'react-materialize';
-import { Link } from 'react-router-dom';
-import { getImageURL } from '../utils/getImageURL';
+import React, { useState } from 'react';
+import SingleExperiencePage from './SingleExperiencePage';
+import { Pagination, Icon } from 'react-materialize';
 
 const Experiences = ({ experiences, type }) => {
-  // This component renders all the experiences
-  //   console.log(experiences);
+  const [currentPage, setCurrentPage] = useState(1);
+  const [experiencesPerPage, setExperiencesPerPage] = useState(6);
+
+  // Get current experiences
+  const indexOfLastExperience = currentPage * experiencesPerPage;
+  const indexOfFirstExperience = indexOfLastExperience - experiencesPerPage;
+  const currentExperiences = experiences.slice(
+    indexOfFirstExperience,
+    indexOfLastExperience
+  );
+
+  const paginate = (pageNumber) => setCurrentPage(pageNumber);
+
   return (
     <div>
-      <Collapsible popout>
-        {Object.keys(experiences).map((company) => (
-          <CollapsibleItem
-            header={company}
-            icon={<Icon>all_inclusive</Icon>}
-            className='center-align'
-            style={{ fontSize: '20px' }}
-          >
-            {experiences[company].map((member, index) => (
-              <Col m={7} s={12}>
-                <div />
+      <SingleExperiencePage experiences={currentExperiences} type={type} />
 
-                <Link to={`/learnspace/${type}/${member.id}`}>
-                  <Card
-                    style={{ paddingLeft: '20px', fontSize: '17px' }}
-                    className='hoverable'
-                    horizontal
-                    header={
-                      <CardTitle
-                        image={getImageURL(member.imageLink, -1, -1, -1, -1)}
-                        className='valign-wrapper'
-                      />
-                    }
-                  >
-                    <p>{member.name}</p>
-                    <br />
-                    <p>{member.profile}</p>
-                    <br />
-                    <p>
-                      <em> "{member.caption}" </em>
-                    </p>
-                  </Card>
-                </Link>
-              </Col>
-            ))}
-          </CollapsibleItem>
-        ))}
-      </Collapsible>
+      <Pagination
+        activePage={1}
+        items={Math.ceil(experiences.length / experiencesPerPage)}
+        leftBtn={<Icon>chevron_left</Icon>}
+        maxButtons={5}
+        rightBtn={<Icon>chevron_right</Icon>}
+        onSelect={paginate}
+      />
     </div>
-    // <Row>
-    //   {experiences.map((member, index) => (
-    //     <ExperienceItem
-    //       member={member}
-    //       id={member.id}
-    //       type={type}
-    //       key={index}
-    //     />
-    //   ))}
-    // </Row>
   );
 };
 
