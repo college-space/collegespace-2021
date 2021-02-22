@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import ExamSpaceList from '../components/ExamSpaceList';
 import { useLocation, useParams } from 'react-router-dom';
+import Loader from '../components/Loader';
 
 const ExamSpace = () => {
   const location = useLocation();
@@ -27,7 +28,7 @@ const ExamSpace = () => {
     getExamPapersData(branch);
   }, [location.pathname]);
 
-  if (loading) return <div>Loading</div>;
+  if (loading) return <Loader />;
   else if (exampapersData == null)
     return <div>Papers of this branch will be added soon!!</div>;
   return <ExamSpaceList exampapersData={exampapersData} />;
