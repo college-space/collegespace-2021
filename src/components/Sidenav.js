@@ -19,7 +19,7 @@ const Sidenav = () => {
     let instance = M.Sidenav.getInstance(sidenavRef.current);
     // instance.open();
   }, []);
-
+  const branchList = ['coe', 'it', 'ece'];
   return (
     <>
       <ul ref={sidenavRef} id='slide-out' className='sidenav sidenav-fixed'>
@@ -48,12 +48,45 @@ const Sidenav = () => {
             Meet Our Team
           </NavLink>
         </li>
-        <li>
+
+        <li className='no-padding'>
+          <Collapsible accordion={true} className='collapsible-accordion'>
+            <li className='bold'>
+              <a
+                className='collapsible-header waves-effect waves-teal'
+                // style={{ display: 'flex' }}
+              >
+                Examspace
+                <Icon>keyboard_arrow_down</Icon>
+              </a>
+              <div
+                className='collapsible-body'
+                // style={{ display: 'block' }}
+              >
+                <ul>
+                  {branchList.map((branch, index) => (
+                    <li>
+                      <NavLink
+                        to={`/examspace/${branch}`}
+                        className='waves-effect'
+                      >
+                        <i className='material-icons'>all_inclusive</i>
+                        {branch.toUpperCase()}
+                      </NavLink>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </li>
+          </Collapsible>
+        </li>
+
+        {/* <li>
           <NavLink to={'/examspace'} className='waves-effect'>
             <i className='material-icons'>all_inclusive</i>
             ExamSpace
           </NavLink>
-        </li>
+        </li> */}
         {/* <li>
           <NavLink to={'/examspace'} className='waves-effect'>
             <i className='material-icons'>videogame_asset</i>
