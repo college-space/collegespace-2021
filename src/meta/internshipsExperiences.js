@@ -4,7 +4,7 @@ const internshipExperiences = {
       name: 'Bradd Hogg',
       contact: '999999',
       profile: 'Software Engineer',
-      caption: 'You Can Do It',
+      caption: 'Hello',
       date: '07/01/2019',
       imageLink:
         'https://res.cloudinary.com/neo1729/image/upload/v1613712053/CollegeSpace%20Feb%202021/yuna_ksq3ts.jpg',
