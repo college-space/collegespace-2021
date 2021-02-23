@@ -1,10 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Col, Card, CardTitle } from 'react-materialize';
+import { getImageURL } from '../utils/getImageURL';
 
 const ExperienceItem = ({ member, id, type }) => {
   return (
-    <Col m={4} s={12} style={{ verticalAlign: 'bottom' }}>
+    <Col l={4} m={6} s={12} style={{ verticalAlign: 'bottom' }}>
       <Link to={`/learnspace/${type}/${id}`}>
         <Card
           style={{
@@ -13,11 +14,15 @@ const ExperienceItem = ({ member, id, type }) => {
             height: '181px',
             fontSize: '13px',
             paddingLeft: '10px',
+            color: 'black',
           }}
           className='hoverable'
           horizontal
           header={
-            <CardTitle image={member.imageLink} className='valign-wrapper' />
+            <CardTitle
+              image={getImageURL(member.imageLink, 150, -1, -1, -1)}
+              className='valign-wrapper'
+            />
           }
         >
           <p>{member.name}</p>
