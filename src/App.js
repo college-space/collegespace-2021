@@ -1,4 +1,5 @@
 import './App.css';
+import React, { useState } from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import Header from './components/Header';
@@ -11,6 +12,9 @@ import Team from './pages/Team';
 import Sidenav from './components/Sidenav';
 
 function App() {
+  const [internshipsExperiences, setInternshipsExperiences] = useState([]);
+  const [placementsExperiences, setPlacementsExperiences] = useState([]);
+
   return (
     <Router>
       <div className='App'>
@@ -21,16 +25,35 @@ function App() {
           <Switch>
             <Route exact path='/' component={Home} />
             <Route exact path='/team' component={Team} />
-            <Route exact path='/examspace' component={ExamSpace} />
+            <Route exact path='/examspace/:branch' component={ExamSpace} />
             <Route
               exact
               path='/learnspace/internships'
-              component={Internships}
+              render={() => (
+                <Internships
+                  internshipsExperiences={internshipsExperiences}
+                  setInternshipsExperiences={setInternshipsExperiences}
+                />
+              )}
             />
-            <Route exact path='/learnspace/placements' component={Placements} />
             <Route
-              path='/learnspace/:type/:id(\d+)'
-              component={SingleExperience}
+              exact
+              path='/learnspace/placements'
+              render={() => (
+                <Placements
+                  placementsExperiences={placementsExperiences}
+                  setPlacementsExperiences={setPlacementsExperiences}
+                />
+              )}
+            />
+            <Route
+              path='/learnspace/:type/:id'
+              render={() => (
+                <SingleExperience
+                  internshipsExperiences={internshipsExperiences}
+                  placementsExperiences={placementsExperiences}
+                />
+              )}
             />
             <Route exact path='/examspace/midsem' component={ExamSpace} />
             <Route exact path='/examspace/endsem' component={ExamSpace} />
