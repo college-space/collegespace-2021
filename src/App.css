@@ -330,3 +330,12 @@ a.active {
 .pagination li.active {
   background-color: #38435a;
 }
+
+.btn {
+  background-color: #38435a;
+}
+
+.btn:hover {
+  /* color: black; */
+  background-color: #0c76bd;
+}
