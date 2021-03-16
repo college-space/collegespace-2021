@@ -7,6 +7,7 @@ import Sidenav from './components/Layout/Sidenav';
 import Home from './pages/Home';
 import Team from './pages/Team';
 import ExamSpace from './pages/ExamSpace';
+import LearnSpace from './pages/LearnSpace';
 
 function App() {
   return (
@@ -25,6 +26,9 @@ function App() {
               </Route>
               <Route exact path='/examspace/:branch'>
                 <ExamSpace />
+              </Route>
+              <Route exact path='/learnspace/:type'>
+                <LearnSpace />
               </Route>
             </Switch>
           </main>

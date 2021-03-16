@@ -5,6 +5,7 @@ import {
   SET_TEAMDATA,
   SET_LOADING,
   SET_EXAMPAPERS,
+  SET_LEARNSPACEDATA,
 } from './types';
 import reducer from './reducer';
 
@@ -15,6 +16,10 @@ const initialState = {
   isLoading: false,
   teamData: data,
   examPapersData: null,
+  learnSpaceData: {
+    internships: [],
+    placements: [],
+  },
 };
 
 export const AppContext = React.createContext();
@@ -46,6 +51,22 @@ export const AppProvider = ({ children }) => {
     } else dispatch({ type: SET_EXAMPAPERS, payload: null });
   };
 
+  const getLearnSpaceData = async (type) => {
+    if (state.learnSpaceData[type].length > 0) return;
+    setLoading();
+    const response = await fetch(
+      `https://collegespace-backend-strapi.herokuapp.com/${type}`
+    );
+    const data = await response.json();
+    dispatch({
+      type: SET_LEARNSPACEDATA,
+      payload: {
+        type,
+        data,
+      },
+    });
+  };
+
   return (
     <AppContext.Provider
       value={{
@@ -53,6 +74,7 @@ export const AppProvider = ({ children }) => {
         setHeading,
         getTeamData,
         getExamPapers,
+        getLearnSpaceData,
       }}
     >
       {children}

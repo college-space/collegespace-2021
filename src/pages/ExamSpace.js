@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { useGlobalContext } from '../context/context';
 import Loader from '../components/Layout/Loader';
-import ExamSpaceList from '../components/ExamSpace/ExamSpaceList.js';
+import ExamSpaceList from '../components/ExamSpace/ExamSpaceList';
 
 const ExamSpace = () => {
   const { branch } = useParams();
