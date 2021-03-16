@@ -8,6 +8,7 @@ import Home from './pages/Home';
 import Team from './pages/Team';
 import ExamSpace from './pages/ExamSpace';
 import LearnSpace from './pages/LearnSpace';
+import Experience from './pages/Experience';
 
 function App() {
   return (
@@ -29,6 +30,9 @@ function App() {
               </Route>
               <Route exact path='/learnspace/:type'>
                 <LearnSpace />
+              </Route>
+              <Route exact path='/learnspace/:type/:id'>
+                <Experience />
               </Route>
             </Switch>
           </main>

@@ -6,12 +6,7 @@ import LearnSpaceList from '../components/LearnSpace/LearnSpaceList';
 
 const LearnSpace = () => {
   const { type } = useParams();
-  const {
-    setHeading,
-    isLoading,
-    learnSpaceData,
-    getLearnSpaceData,
-  } = useGlobalContext();
+  const { setHeading, isLoading, getLearnSpaceData } = useGlobalContext();
 
   useEffect(() => {
     setHeading(`LearnSpace - ${type.toUpperCase()}`);
@@ -20,7 +15,6 @@ const LearnSpace = () => {
 
   if (isLoading) return <Loader />;
   return <LearnSpaceList />;
-  //   return <div>hello</div>;
 };
 
 export default LearnSpace;
