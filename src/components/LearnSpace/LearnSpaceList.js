@@ -1,10 +1,16 @@
-import React, { useState } from 'react';
-import SingleExperiencePage from './SingleExperiencePage';
+import React, { useState, useEffect } from 'react';
+import { useParams } from 'react-router-dom';
 import { Pagination, Icon } from 'react-materialize';
+import { useGlobalContext } from '../../context/context';
+import LearnSpaceListSinglePage from './LearnSpaceListSinglePage';
 
-const Experiences = ({ experiences, type }) => {
+const LearnSpaceList = () => {
+  const { type } = useParams();
+  const { learnSpaceData } = useGlobalContext();
+  const experiences = learnSpaceData[type];
+  const experiencesPerPage = 6;
   const [currentPage, setCurrentPage] = useState(1);
-  const [experiencesPerPage, setExperiencesPerPage] = useState(6);
+  // const [experiencesPerPage, setExperiencesPerPage] = useState(6);
 
   // Get current experiences
   const indexOfLastExperience = currentPage * experiencesPerPage;
@@ -16,9 +22,14 @@ const Experiences = ({ experiences, type }) => {
 
   const paginate = (pageNumber) => setCurrentPage(pageNumber);
 
+  useEffect(() => {
+    // reset to first page whenever 'type' changes
+    setCurrentPage(1);
+  }, [type]);
+
   return (
-    <div>
-      <SingleExperiencePage experiences={currentExperiences} type={type} />
+    <>
+      <LearnSpaceListSinglePage experiences={currentExperiences} />
 
       <Pagination
         activePage={1}
@@ -28,8 +39,8 @@ const Experiences = ({ experiences, type }) => {
         rightBtn={<Icon>chevron_right</Icon>}
         onSelect={paginate}
       />
-    </div>
+    </>
   );
 };
 
-export default Experiences;
+export default LearnSpaceList;

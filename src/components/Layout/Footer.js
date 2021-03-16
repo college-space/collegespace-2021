@@ -27,6 +27,7 @@ const Footer = () => {
             <a
               href='https://www.google.com/maps/place/Netaji+Subhas+Institute+Of+Technology/@28.6080563,77.0339984,17z/data=!3m1!4b1!4m5!3m4!1s0x390d053516783c9b:0x7e540ab22a28446!8m2!3d28.6080516!4d77.0361871'
               target='_blank'
+              rel='noreferrer'
               className='grey-text text-lighten-1'
             >
               <Icon>location_on</Icon>

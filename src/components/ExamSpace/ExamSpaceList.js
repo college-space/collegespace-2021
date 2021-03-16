@@ -6,9 +6,12 @@ import {
   Tabs,
   Tab,
 } from 'react-materialize';
+import { useGlobalContext } from '../../context/context';
 
 const exams = ['MidSem', 'EndSem'];
-const ExamSpace = ({ exampapersData }) => {
+const ExamSpace = () => {
+  const { examPapersData } = useGlobalContext();
+
   let semList = [];
   for (let i = 1; i <= 8; i++) semList.push(`semester_${i}`);
 
@@ -27,7 +30,7 @@ const ExamSpace = ({ exampapersData }) => {
                   key={index}
                 >
                   <ul>
-                    {exampapersData[exam.toLowerCase()][sem].map(
+                    {examPapersData[exam.toLowerCase()][sem].map(
                       (paper, index) => (
                         <li key={index}>
                           <a

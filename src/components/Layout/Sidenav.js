@@ -1,23 +1,14 @@
-import React, { Component, useRef, useEffect } from 'react';
+import React, { useRef, useEffect } from 'react';
 import M from 'materialize-css';
 import 'materialize-css/dist/css/materialize.min.css';
 import { Icon, Collapsible } from 'react-materialize';
 import { NavLink } from 'react-router-dom';
-import { getImageURL } from '../utils/getImageURL';
+import { getImageURL } from '../../utils/getImageURL';
 
 const Sidenav = () => {
   const sidenavRef = useRef(null);
   useEffect(() => {
-    const options = {
-      inDuration: 50,
-      outDuration: 20,
-      draggable: true,
-    };
-
     M.Sidenav.init(sidenavRef.current);
-
-    let instance = M.Sidenav.getInstance(sidenavRef.current);
-    // instance.open();
   }, []);
   const branchList = ['coe', 'it', 'ece'];
   return (
@@ -27,12 +18,13 @@ const Sidenav = () => {
           <img
             className='container'
             src={getImageURL(
-              'https://res.cloudinary.com/neo1729/image/upload/v1613712054/CollegeSpace%20Feb%202021/logo_xeqw2n.png',
+              'https://res.cloudinary.com/collegespace/image/upload/v1614059741/Logos/logo_dwvpxw.png',
               300,
               -1,
               -1,
               -1
             )}
+            alt='collegespace'
           />
         </li>
 
@@ -52,20 +44,15 @@ const Sidenav = () => {
         <li className='no-padding'>
           <Collapsible accordion={true} className='collapsible-accordion'>
             <li className='bold'>
-              <a
-                className='collapsible-header waves-effect waves-teal'
-                // style={{ display: 'flex' }}
-              >
+              {/* eslint-disable-next-line */}
+              <a className='collapsible-header waves-effect waves-teal'>
                 Examspace
                 <Icon>keyboard_arrow_down</Icon>
               </a>
-              <div
-                className='collapsible-body'
-                // style={{ display: 'block' }}
-              >
+              <div className='collapsible-body'>
                 <ul>
                   {branchList.map((branch, index) => (
-                    <li>
+                    <li key={index}>
                       <NavLink
                         to={`/examspace/${branch}`}
                         className='waves-effect'
@@ -81,33 +68,15 @@ const Sidenav = () => {
           </Collapsible>
         </li>
 
-        {/* <li>
-          <NavLink to={'/examspace'} className='waves-effect'>
-            <i className='material-icons'>all_inclusive</i>
-            ExamSpace
-          </NavLink>
-        </li> */}
-        {/* <li>
-          <NavLink to={'/examspace'} className='waves-effect'>
-            <i className='material-icons'>videogame_asset</i>
-            ExamSpace
-          </NavLink>
-        </li> */}
-
         <li className='no-padding'>
           <Collapsible accordion={true} className='collapsible-accordion'>
             <li className='bold'>
-              <a
-                className='collapsible-header waves-effect waves-teal'
-                // style={{ display: 'flex' }}
-              >
+              {/* eslint-disable-next-line */}
+              <a className='collapsible-header waves-effect waves-teal'>
                 LearnSpace
                 <Icon>keyboard_arrow_down</Icon>
               </a>
-              <div
-                className='collapsible-body'
-                // style={{ display: 'block' }}
-              >
+              <div className='collapsible-body'>
                 <ul>
                   <li>
                     <NavLink

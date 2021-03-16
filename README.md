@@ -7,7 +7,8 @@ Back-end: Strapi --> deployed on Heroku <br/>
 Databse: MongoDB --> deployed on MongoDB Atlas <br/>
 Image CDN: Cloudinary <br/>
 
-## Branches: 
-master --> the netlify site is deployed from this branch <br/>
-develop --> to work on new features/changes <br/>
+## Branches:
+
+master --> Latest version of the website, the netlify site is deployed from this branch <br/>
 v0 --> old version of the website <br/>
+v1 --> version of the website before implementing context api

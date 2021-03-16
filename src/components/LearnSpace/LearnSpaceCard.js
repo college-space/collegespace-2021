@@ -1,9 +1,11 @@
 import React from 'react';
+import { useParams } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import { Col, Card, CardTitle } from 'react-materialize';
-import { getImageURL } from '../utils/getImageURL';
+import { getImageURL } from '../../utils/getImageURL';
 
-const ExperienceItem = ({ member, id, type }) => {
+const LearnSpaceCard = ({ member, id }) => {
+  const { type } = useParams();
   return (
     <Col l={4} m={6} s={12} style={{ verticalAlign: 'bottom' }}>
       <Link to={`/learnspace/${type}/${id}`}>
@@ -36,4 +38,4 @@ const ExperienceItem = ({ member, id, type }) => {
   );
 };
 
-export default ExperienceItem;
+export default LearnSpaceCard;
