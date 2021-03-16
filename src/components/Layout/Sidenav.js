@@ -1,4 +1,4 @@
-import React, { Component, useRef, useEffect } from 'react';
+import React, { useRef, useEffect } from 'react';
 import M from 'materialize-css';
 import 'materialize-css/dist/css/materialize.min.css';
 import { Icon, Collapsible } from 'react-materialize';
@@ -8,16 +8,7 @@ import { getImageURL } from '../../utils/getImageURL';
 const Sidenav = () => {
   const sidenavRef = useRef(null);
   useEffect(() => {
-    const options = {
-      inDuration: 50,
-      outDuration: 20,
-      draggable: true,
-    };
-
     M.Sidenav.init(sidenavRef.current);
-
-    let instance = M.Sidenav.getInstance(sidenavRef.current);
-    // instance.open();
   }, []);
   const branchList = ['coe', 'it', 'ece'];
   return (

@@ -1,10 +1,12 @@
 import React from 'react';
+import { useGlobalContext } from '../../context/context';
 
 const Header = () => {
+  const { heading } = useGlobalContext();
   return (
     <header className='section index-banner'>
       <div className='container'>
-        <h3 className='header center-on-small-only white-text'>CollegeSpace</h3>
+        <h3 className='header center-on-small-only white-text'>{heading}</h3>
       </div>
     </header>
   );
