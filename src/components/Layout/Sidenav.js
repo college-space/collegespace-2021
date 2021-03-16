@@ -44,6 +44,7 @@ const Sidenav = () => {
         <li className='no-padding'>
           <Collapsible accordion={true} className='collapsible-accordion'>
             <li className='bold'>
+              {/* eslint-disable-next-line */}
               <a className='collapsible-header waves-effect waves-teal'>
                 Examspace
                 <Icon>keyboard_arrow_down</Icon>
@@ -51,7 +52,7 @@ const Sidenav = () => {
               <div className='collapsible-body'>
                 <ul>
                   {branchList.map((branch, index) => (
-                    <li>
+                    <li key={index}>
                       <NavLink
                         to={`/examspace/${branch}`}
                         className='waves-effect'
@@ -70,6 +71,7 @@ const Sidenav = () => {
         <li className='no-padding'>
           <Collapsible accordion={true} className='collapsible-accordion'>
             <li className='bold'>
+              {/* eslint-disable-next-line */}
               <a className='collapsible-header waves-effect waves-teal'>
                 LearnSpace
                 <Icon>keyboard_arrow_down</Icon>
