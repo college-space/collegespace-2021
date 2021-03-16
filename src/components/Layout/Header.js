@@ -6,7 +6,9 @@ const Header = () => {
   return (
     <header className='section index-banner'>
       <div className='container'>
-        <h3 className='header center-on-small-only white-text'>{heading}</h3>
+        <h3 className='header center-on-small-only white-text capitalize'>
+          {heading}
+        </h3>
       </div>
     </header>
   );

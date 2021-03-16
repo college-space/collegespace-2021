@@ -16,6 +16,7 @@ const Experience = () => {
         break;
       }
     }
+    // eslint-disable-next-line
   }, [id]);
 
   return (

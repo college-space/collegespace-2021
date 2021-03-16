@@ -17,6 +17,7 @@ const ExamSpace = () => {
   useEffect(() => {
     setHeading('ExamSpace');
     getExamPapers(branch);
+    // eslint-disable-next-line
   }, [branch]);
 
   if (isLoading) return <Loader />;

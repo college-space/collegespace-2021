@@ -9,6 +9,7 @@ const Team = () => {
   useEffect(() => {
     setHeading('Meet Our Team');
     getTeamData();
+    // eslint-disable-next-line
   }, []);
 
   if (isLoading) return <Loader />;

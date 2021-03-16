@@ -8,9 +8,9 @@ const LearnSpaceList = () => {
   const { type } = useParams();
   const { learnSpaceData } = useGlobalContext();
   const experiences = learnSpaceData[type];
-
+  const experiencesPerPage = 6;
   const [currentPage, setCurrentPage] = useState(1);
-  const [experiencesPerPage, setExperiencesPerPage] = useState(6);
+  // const [experiencesPerPage, setExperiencesPerPage] = useState(6);
 
   // Get current experiences
   const indexOfLastExperience = currentPage * experiencesPerPage;

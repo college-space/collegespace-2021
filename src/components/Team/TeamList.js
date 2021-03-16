@@ -35,7 +35,7 @@ const TeamList = () => {
                       </center>
                     </span>
                   }
-                  actions={[<a href='#'>Social Platforms links...</a>]}
+                  // actions={[<a href='#'>Social Platforms links...</a>]}
                 >
                   <div style={{ height: '50px' }}>
                     {member.positions.map((position, index) => (

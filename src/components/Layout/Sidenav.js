@@ -24,6 +24,7 @@ const Sidenav = () => {
               -1,
               -1
             )}
+            alt='collegespace'
           />
         </li>
 

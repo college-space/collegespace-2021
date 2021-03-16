@@ -9,8 +9,9 @@ const LearnSpace = () => {
   const { setHeading, isLoading, getLearnSpaceData } = useGlobalContext();
 
   useEffect(() => {
-    setHeading(`LearnSpace - ${type.toUpperCase()}`);
+    setHeading(`LearnSpace - ${type}`);
     getLearnSpaceData(type);
+    // eslint-disable-next-line
   }, [type]);
 
   if (isLoading) return <Loader />;

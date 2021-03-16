@@ -339,3 +339,7 @@ a.active {
   /* color: black; */
   background-color: #0c76bd;
 }
+
+.capitalize {
+  text-transform: capitalize;
+}

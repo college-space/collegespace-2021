@@ -8,6 +8,7 @@ const Home = () => {
 
   useEffect(() => {
     setHeading('Welcome To CollegeSpace');
+    // eslint-disable-next-line
   }, []);
 
   return (
@@ -31,6 +32,7 @@ const Home = () => {
                   -1,
                   -1
                 )}
+                alt='collegespace'
               />
             </div>
             <span className='card-title'>Who are we?</span>
@@ -56,6 +58,7 @@ const Home = () => {
                   -1,
                   -1
                 )}
+                alt='collegespace'
               />
             </div>
             <span className='card-title'>What have we been upto?</span>
@@ -80,6 +83,7 @@ const Home = () => {
                   -1,
                   -1
                 )}
+                alt='collegespace'
               />
             </div>
             <span className='card-title'>Whom will you meet at CS?</span>
@@ -104,6 +108,7 @@ const Home = () => {
                   -1,
                   -1
                 )}
+                alt='collegespace'
               />
             </div>
             <span className='card-title'>Why should you join CS?</span>
