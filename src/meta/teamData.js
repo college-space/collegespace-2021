@@ -1,6 +1,24 @@
 const teamData = {
   Leadership: [
     {
+      positions: ['Founder'],
+      name: 'Sahil Gulati',
+      image:
+        'https://res.cloudinary.com/neo1729/image/upload/v1613712054/CollegeSpace%20Feb%202021/logo_xeqw2n.png',
+      chipImage:
+        'https://res.cloudinary.com/neo1729/image/upload/v1613712054/CollegeSpace%20Feb%202021/logo_xeqw2n.png',
+      bio: '',
+    },
+    {
+      positions: ['Founder'],
+      name: 'Tushar Gupta',
+      image:
+        'https://res.cloudinary.com/neo1729/image/upload/v1613712054/CollegeSpace%20Feb%202021/logo_xeqw2n.png',
+      chipImage:
+        'https://res.cloudinary.com/neo1729/image/upload/v1613712054/CollegeSpace%20Feb%202021/logo_xeqw2n.png',
+      bio: '',
+    },
+    {
       positions: ['President'],
       name: 'Shakib Ahmed',
       image:
@@ -102,15 +120,6 @@ const teamData = {
     {
       positions: ['Former Content Creation, Marketing & PR Lead'],
       name: 'Avanik Gupta',
-      image:
-        'https://res.cloudinary.com/neo1729/image/upload/v1613712054/CollegeSpace%20Feb%202021/logo_xeqw2n.png',
-      chipImage:
-        'https://res.cloudinary.com/neo1729/image/upload/v1613712054/CollegeSpace%20Feb%202021/logo_xeqw2n.png',
-      bio: '',
-    },
-    {
-      positions: ['Founder'],
-      name: 'Sahil Gulati',
       image:
         'https://res.cloudinary.com/neo1729/image/upload/v1613712054/CollegeSpace%20Feb%202021/logo_xeqw2n.png',
       chipImage:
