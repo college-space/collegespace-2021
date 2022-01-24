@@ -10,7 +10,25 @@ const Sidenav = () => {
   useEffect(() => {
     M.Sidenav.init(sidenavRef.current);
   }, []);
-  const branchList = ['coe', 'it', 'ece'];
+  const branchList = ['coe', 
+  'it', 
+  'ece',
+  'csai',
+  'csds',
+  'bt',
+  'itns',
+  'mac',
+  'eiot',
+  'ee',
+  'ice',
+  'mpae',
+  'me',
+  'ce ( West Campus )',
+  'iiot ( West Campus )',
+  'meev ( West Campus )',
+  'gi ( West Campus )',
+  'csda ( East Campus )',
+  'ecam ( East Campus )'];
   return (
     <>
       <ul ref={sidenavRef} id='slide-out' className='sidenav sidenav-fixed'>
