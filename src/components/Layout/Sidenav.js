@@ -24,9 +24,9 @@ const Sidenav = () => {
   'mpae',
   'me',
   'ce ( West Campus )',
-  'iiot ( West Campus )',
   'meev ( West Campus )',
   'gi ( West Campus )',
+  'ciot ( East Campus )',
   'csda ( East Campus )',
   'ecam ( East Campus )'];
   return (
